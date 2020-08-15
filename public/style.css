@@ -13,6 +13,19 @@
     flex: 0.2
 }
 
+#video-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+video {
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+    padding: 8px;
+}
+
 .main__videos {
     flex-grow: 1;
     background-color: rgb(17, 38, 99);
@@ -101,4 +114,77 @@
 .unmute,
 .stop {
     color: #CC3B33;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+. #video-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+video {
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+    padding: 8px;
+}
+
+
+/* MQ */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    //CSS
+}
+
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) {
+    //CSS
+}
+
+a {
+    color: white;
+}
+
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .main {
+        height: 100vh;
+        display: flex;
+    }
+    .main__left {
+        display: flex;
+        flex-direction: column;
+    }
+    .main__right {
+        display: flex;
+    }
+    .main__videos {
+        flex-grow: 1;
+        background-color: rgb(35, 64, 153);
+        display: flex;
+        justify-content: left;
+        align-items: baseline;
+        padding: 5px;
+    }
+    .video {
+        height: 250px;
+        width: 300px;
+        object-fit: cover;
+        padding: 2px;
+    }
 }
