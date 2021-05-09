@@ -137,8 +137,11 @@ video {
 
 /* MQ */
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    //CSS
+@media (max-width: 768px) and (orientation: landscape) {
+  .main {
+    height: 100vh;
+    display: grid;
+}
 }
 
 
@@ -147,44 +150,14 @@ video {
     ##Screen = B/w 481px to 767px
   */
 
-@media (min-width: 481px) and (max-width: 767px) {
-    //CSS
+@media (max-width: 550px) {
+     .main {
+    height: 100vh;
+    display: grid;
+}
 }
 
-a {
+.main__controls__button>a {
     color: white;
 }
 
-
-/* 
-    ##Device = Most of the Smartphones Mobiles (Portrait)
-    ##Screen = B/w 320px to 479px
-  */
-
-@media (min-width: 320px) and (max-width: 480px) {
-    .main {
-        height: 100vh;
-        display: flex;
-    }
-    .main__left {
-        display: flex;
-        flex-direction: column;
-    }
-    .main__right {
-        display: flex;
-    }
-    .main__videos {
-        flex-grow: 1;
-        background-color: rgb(35, 64, 153);
-        display: flex;
-        justify-content: left;
-        align-items: baseline;
-        padding: 5px;
-    }
-    .video {
-        height: 250px;
-        width: 300px;
-        object-fit: cover;
-        padding: 2px;
-    }
-}
